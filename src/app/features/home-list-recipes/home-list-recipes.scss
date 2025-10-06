@@ -1,0 +1,42 @@
+
+.hero-section {
+    margin-bottom: 2rem;
+    background-color: rgb(70, 70, 171);
+    height: 30rem
+}
+
+
+
+.display-recipes {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+    .meal-card {
+        width: 14rem;
+        background-color: rgb(155, 233, 155);
+        border-radius: 0.625rem;
+        cursor: pointer;
+    }
+
+
+    img {
+        width: 100%;
+        height: 65%;
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
+
+    }
+
+    .name-favorites {
+        padding: 0.5rem;
+    }
+
+
+
+}
+
+

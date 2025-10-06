@@ -14,7 +14,7 @@ export const routes: Routes = [
         component: HomeListRecipes
     },
     {
-        path: 'cooking-guide-details/:searchRecipe',
+        path: 'cooking-guide-details/:searchRecipeID',
         title: 'Cooking guide details',
         component: CookingGuideDetails
     },

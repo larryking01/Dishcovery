@@ -1,0 +1,32 @@
+<main>
+    <app-navbar />
+
+    <section>
+        <article class="hero-section">
+            <h3>Hero section</h3>
+        </article>
+
+        @if( MealArray.length > 0 ) {
+            <article class="display-recipes">
+                @for( mealItem of MealArray; track mealItem.idMeal; let total = $count; let index = $index ) {
+                    <div class="meal-card" (click)="navigateToSelectedRecipeDetails( mealItem.idMeal )">
+                        <img [src]="mealItem.strMealThumb" [alt]="mealItem.strMeal" />
+
+                        <div class="name-favorites">
+                            <h4>{{ mealItem.strMeal }}</h4>
+                            <h6>Save</h6>
+                        </div>
+                    </div>
+                    
+                }
+            </article>
+        }
+        @else {
+            <app-empty-state />
+        }
+
+    </section>
+
+    <app-footer />
+
+</main>
