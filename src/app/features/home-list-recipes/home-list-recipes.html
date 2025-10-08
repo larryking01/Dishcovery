@@ -3,10 +3,11 @@
 
     <section>
         <article class="hero-section">
-            <h3>Hero section</h3>
+            <img src="https://previews.123rf.com/images/serezniy/serezniy1301/serezniy130106864/21537899-young-woman-chef-cooking-in-kitchen.jpg" alt="chef logo" />
         </article>
 
         @if( MealArray.length > 0 ) {
+            <h3>This summer recipes ({{ MealArray.length }})</h3>
             <article class="display-recipes">
                 @for( mealItem of MealArray; track mealItem.idMeal; let total = $count; let index = $index ) {
                     <div class="meal-card" (click)="navigateToSelectedRecipeDetails( mealItem.idMeal )">
@@ -14,7 +15,7 @@
 
                         <div class="name-favorites">
                             <h4>{{ mealItem.strMeal }}</h4>
-                            <h6>Save</h6>
+                            <p>{{ mealItem.strArea }}</p>
                         </div>
                     </div>
                     

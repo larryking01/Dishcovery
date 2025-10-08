@@ -25,7 +25,7 @@ export class HomeListRecipes implements OnInit {
 
 
   ngOnInit(): void {
-    this.fetchAllRecipesStartingWithLetter('h')
+    this.fetchAllRecipesStartingWithLetter('b')
   }
 
 

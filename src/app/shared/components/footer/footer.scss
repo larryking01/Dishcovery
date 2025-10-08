@@ -4,7 +4,7 @@ main {
 
 .footer-container {
     // height: 15rem;
-    background-color: rgb(26, 25, 25);
+    background-color: var(--footer-bg-black);
     padding: 2rem;
     color: #fff;
     display: flex;
@@ -48,7 +48,7 @@ main {
         border: none;
         border-radius: 0.4rem;
         cursor: pointer;
-        background-color: #634dd1;
+        background-color: var(--primary-blue);
         color: white;
 
     }
